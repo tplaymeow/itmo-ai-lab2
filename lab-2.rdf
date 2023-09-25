@@ -1,0 +1,681 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Belongs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Belongs">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Category -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Category">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Neighbor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Neighbor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Category"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#OwnsObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#OwnsObject">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Balance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Balance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#ObjectPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#ObjectPosition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#PlayerPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#PlayerPosition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Category"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Player"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank_Alfa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank_Alfa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank_Sber -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank_Sber">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank_Tinkoff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank_Tinkoff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">300.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank_VTB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank_VTB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">400.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car_Audi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car_Audi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car_BMW -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car_BMW">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car_Ford -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car_Ford">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">300.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car_Mercedes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car_Mercedes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">400.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Gleb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Gleb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:OwnsObject rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car_Audi"/>
+        <untitled-ontology-5:OwnsObject rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Car_BMW"/>
+        <untitled-ontology-5:OwnsObject rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel_FourSeasons"/>
+        <untitled-ontology-5:Balance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</untitled-ontology-5:Balance>
+        <untitled-ontology-5:Name>Глеб</untitled-ontology-5:Name>
+        <untitled-ontology-5:PlayerPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</untitled-ontology-5:PlayerPosition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel_FourSeasons -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel_FourSeasons">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel_Hilton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel_Hilton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel_HolidayInn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel_HolidayInn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">300.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel_Marriot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel_Marriot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">400.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT_Google -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT_Google">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT_Microsoft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT_Microsoft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT_VK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT_VK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">300.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT_Yandex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT_Yandex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+        <untitled-ontology-5:Category rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT"/>
+        <untitled-ontology-5:ObjectPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</untitled-ontology-5:ObjectPosition>
+        <untitled-ontology-5:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">400.0</untitled-ontology-5:Price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Roman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Roman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:OwnsObject rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Hotel_Hilton"/>
+        <untitled-ontology-5:Balance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</untitled-ontology-5:Balance>
+        <untitled-ontology-5:Name>Роман</untitled-ontology-5:Name>
+        <untitled-ontology-5:PlayerPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-5:PlayerPosition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Timur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Timur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:OwnsObject rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT_Google"/>
+        <untitled-ontology-5:OwnsObject rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT_Microsoft"/>
+        <untitled-ontology-5:OwnsObject rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT_VK"/>
+        <untitled-ontology-5:OwnsObject rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#IT_Yandex"/>
+        <untitled-ontology-5:Balance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</untitled-ontology-5:Balance>
+        <untitled-ontology-5:Name>Тимур</untitled-ontology-5:Name>
+        <untitled-ontology-5:PlayerPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-5:PlayerPosition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Vadim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Vadim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Player"/>
+        <untitled-ontology-5:OwnsObject rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank_Alfa"/>
+        <untitled-ontology-5:OwnsObject rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank_Sber"/>
+        <untitled-ontology-5:OwnsObject rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank_Tinkoff"/>
+        <untitled-ontology-5:OwnsObject rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Bank_VTB"/>
+        <untitled-ontology-5:Balance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</untitled-ontology-5:Balance>
+        <untitled-ontology-5:Name>Вадим</untitled-ontology-5:Name>
+        <untitled-ontology-5:PlayerPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</untitled-ontology-5:PlayerPosition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Category"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Object"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Player"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/object">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/price">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Price of all Romans objects</rdfs:comment>
+        <rdfs:label>ObjectsPrice Roman</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#OwnsObject"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Roman"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/object"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Price"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/object"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/price"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#sum"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/price"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Price of all Timurs objects</rdfs:comment>
+        <rdfs:label>ObjectsPrice Timur</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#OwnsObject"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Timur"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/object"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Price"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/object"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/price"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#sum"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/price"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Price of all Vadims objects</rdfs:comment>
+        <rdfs:label>ObjectsPrice Vadim</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#OwnsObject"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Vadim"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/object"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Price"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/object"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/price"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#sum"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/price"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Price of all Glebs objects</rdfs:comment>
+        <rdfs:label>ObjectsPrice Gleb</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#OwnsObject"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Gleb"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/object"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5#Price"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/object"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/price"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#sum"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/tplaymeow/ontologies/2023/8/untitled-ontology-5/price"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
